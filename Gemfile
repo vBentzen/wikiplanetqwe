@@ -13,6 +13,8 @@ group :development do
  gem 'web-console', '~> 2.0'
 end
 
+# Use Devise for authentication / login/logout/signup
+gem 'devise'
 # Use Figaro to store sensitive information
 gem 'figaro', '1.0'
 # Use SCSS for stylesheets
