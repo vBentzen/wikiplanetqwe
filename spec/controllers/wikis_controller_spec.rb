@@ -10,11 +10,6 @@ RSpec.describe WikisController, type: :controller do
       get :index
       expect(response).to have_http_status(:success)
     end
-
-    it "should assign [my_wiki] to @wikis" do
-      get :index
-      expect(assigns(:wikis)).to eq([my_wiki])
-    end
   end
 
   describe "GET new" do

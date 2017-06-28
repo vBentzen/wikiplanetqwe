@@ -8,6 +8,15 @@
   )
 end
 # Create premium User
+1.times do
+User.create!(
+  email: "admin@admin.com",
+  password: 'helloworld',
+  password_confirmation: 'helloworld',
+  confirmed_at: Faker::Date.between_except(1.year.ago, 1.year.from_now, Date.today)
+)
+end
+
 # Create admin User
 
 # Create public Wikis
